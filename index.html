@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Chien by Loan et Noé</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Quelle race de chien es-tu ?</h1>
+    <form id="quizForm">
+        
+        <div class="question">
+            <h2>Es-tu sportif ?</h2>
+            <div class="options">
+                <div class="answer"> <input type="radio" name="sportif" value="Oui"> Oui </div>
+                <div class="answer"> <input type="radio" name="sportif" value="Non"> Non </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Aimes-tu courir vite ?</h2>
+            <div class="options">
+                <div class="answer"> <input type="radio" name="courir" value="Oui"> Oui </div>
+                <div class="answer"> <input type="radio" name="courir" value="Non"> Non </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Es-tu obéissant ?</h2>
+            <div class="options">
+                <div class="answer"> <input type="radio" name="obeissant" value="Oui"> Oui </div>
+                <div class="answer"> <input type="radio" name="obeissant" value="Non"> Non </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Aimes-tu l'eau ?</h2>
+            <div class="options">
+                <div class="answer"> <input type="radio" name="eau" value="Oui"> Oui </div>
+                <div class="answer"> <input type="radio" name="eau" value="Non"> Non </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Tu préfere avoir ...</h2>
+            <div class="options">
+                <div class="answer"> <input type="radio" name="temperature" value="Chaud"> Chaud </div>
+                <div class="answer"> <input type="radio" name="temperature" value="Froid"> Froid </div>
+                <div class="answer"> <input type="radio" name="temperature" value="Aucun"> Aucun </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Aimes-tu partager ?</h2>
+            <div class="options">
+                <div class="answer"> <input type="radio" name="partager" value="Oui"> Oui </div>
+                <div class="answer"> <input type="radio" name="partager" value="Non"> Non </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Es-tu protecteur ?</h2>
+            <div class="options">
+                <div class="answer"> <input type="radio" name="protecteur" value="Oui"> Oui </div>
+                <div class="answer"> <input type="radio" name="protecteur" value="Non"> Non </div>
+            </div>
+        </div>
+
+        <button type="button" onclick="calculerRace()">Valider</button>
+    </form>
+
+    <div class="overlay" id="overlay" onclick="fermerPopup()"></div>
+    <div class="popup" id="popup">
+        <h2 id="resultat"></h2>
+        <img id="imageChien" src="" alt="Race de chien" style="width: 200px; border-radius: 10px;">
+        <button onclick="fermerPopup()">Fermer</button>
+        <button onclick="refaireQuiz()">Refaire le Quiz</button>
+    </div>
+</body>
+<div class="footer">By Loan et Noé</div>
+</html>
